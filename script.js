@@ -5,10 +5,10 @@ Tarefas:
 Crie uma função soma que receba dois números como parâmetros.
 Exiba o resultado no console ou em um alert.*/
 
-// var num1 = parseInt(prompt("Insira o primeiro número: "));
-// var num2 = parseInt(prompt("Insira o primeiro número: "));
+var num1 = parseInt(prompt("Insira o primeiro número: "));
+var num2 = parseInt(prompt("Insira o primeiro número: "));
 
-// console.log(`${num1} + ${num2} = ${num1 + num2}`)
+console.log(`${num1} + ${num2} = ${num1 + num2}`)
 
 
 /*2. Verificação de Par ou Ímpar
@@ -19,13 +19,13 @@ Crie uma função que receba um número.
 Verifique se o número é divisível por 2.
 Exiba no console "O número é par" ou "O número é ímpar".*/
 
-// var num = parseInt(prompt("Insira um número: "));
+var num = parseInt(prompt("Insira um número: "));
 
-// if(num % 2 == 0){
-//     console.log("O númeor é par!")
-// } else{
-//     console.log("O número é ímpar!")
-// }
+if(num % 2 == 0){
+    console.log("O númeor é par!")
+} else{
+    console.log("O número é ímpar!")
+}
 
 
 /*3. Contagem de Números
@@ -35,18 +35,18 @@ Tarefas:
 Utilize um loop for para imprimir os números no console.
 Modifique o exercício para usar um while.*/
 
-// var num = 1;
+var num = 1;
 
-// //com while
-// while(num <= 10){
-//     console.log(num);
-//     num++;
-// }
+//com while
+while(num <= 10){
+    console.log(num);
+    num++;
+}
 
 // // com for
-// for(var num = 1; num <= 10; num++){
-//     console.log(num);
-// }
+for(var num = 1; num <= 10; num++){
+    console.log(num);
+}
 
 
 /*4. Tabuada de um Número
@@ -57,11 +57,11 @@ Peça ao usuário um número.
 Use um loop for para multiplicar o número de 1 a 10.
 Exiba o resultado no console.*/
 
-// var numero = parseInt(prompt("Digite um número para ver sua tabuada:"));
+var numero = parseInt(prompt("Digite um número para ver sua tabuada:"));
 
-// for(var i = 1; i <= 10; i++){
-//     console.log(`${numero} x ${i} = ${numero * i}`);
-// }
+for(var i = 1; i <= 10; i++){
+    console.log(`${numero} x ${i} = ${numero * i}`);
+}
 
 
 /*5. Encontrar o Maior Número em uma Lista
@@ -72,14 +72,14 @@ Crie um array como [3, 7, 2, 9, 5].
 Use um loop para comparar os números e encontrar o maior.
 Exiba o maior número no console.*/
 
-// var array = [3, 7, 2, 9, 5];
-// var maiorNum = array[0];
+var array = [3, 7, 2, 9, 5];
+var maiorNum = array[0];
 
-// for(var i = 1; i < array.length; i++){
-//     if(array[i] > maiorNum){
-//         maiorNum = array[i];
-//     }
-// }
+for(var i = 1; i < array.length; i++){
+    if(array[i] > maiorNum){
+        maiorNum = array[i];
+    }
+}
 
 // console.log(`Maior número: ${maiorNum}`)
 
@@ -92,17 +92,17 @@ Crie uma função que receba uma string.
 Converta a string para um array com o método split.
 Inverta a ordem com o método reverse e transforme novamente em string com join.*/
 
-// function PalavraReversa(palavra){
-//     return palavra.split('').reverse().join('');
-// }
+function PalavraReversa(palavra){
+    return palavra.split('').reverse().join('');
+}
 
-// var palavraUsuario = prompt("Digite uma palavra para invertê-la:");
+var palavraUsuario = prompt("Digite uma palavra para invertê-la:");
 
-// if(palavraUsuario){
-//     console.log("palavra invertida:", PalavraReversa(palavraUsuario));
-// } else{
-//     console.log("nenhuma palavra foi digitada.");
-// }
+if(palavraUsuario){
+    console.log("palavra invertida:", PalavraReversa(palavraUsuario));
+} else{
+    console.log("nenhuma palavra foi digitada.");
+}
 
 
 /*7. Soma de Elementos de um Array
@@ -113,22 +113,22 @@ Crie um array como [1, 2, 3, 4, 5].
 Use um loop ou o método reduce para somar os valores.
 Exiba o resultado no console.*/
 
-// var num = [1, 2, 3, 4, 5];
-// var soma = 0;
+var num = [1, 2, 3, 4, 5];
+var soma = 0;
 
-// //com loop
-// for(var i = 0; i < num.length; i++) {
-//     soma += num[i];
-// }
+//com loop
+for(var i = 0; i < num.length; i++) {
+    soma += num[i];
+}
 
-// console.log("soma loop: ", soma);
+console.log("soma loop: ", soma);
 
-// //com reduce
-// var soma = num.reduce(function(acumulado, valorA){
-//     return acumulado + valorA;
-// }, 0);
+//com reduce
+var soma = num.reduce(function(acumulado, valorA){
+    return acumulado + valorA;
+}, 0);
 
-// console.log("soma reduce:", soma);
+console.log("soma reduce:", soma);
 
 
 /*8. Número Primo
@@ -139,29 +139,29 @@ Crie uma função que receba um número.
 Verifique se ele é divisível apenas por 1 e por ele mesmo.
 Exiba "É primo" ou "Não é primo".*/
 
-// function Primo(num){
-//     if(num <= 1){
-//         return false;
-//     }
-//     for(var i = 2; i < num; i++){
-//         if(num % i === 0){
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+function Primo(num){
+    if(num <= 1){
+        return false;
+    }
+    for(var i = 2; i < num; i++){
+        if(num % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
 
-// var numero = parseInt(prompt("Insira um número:"));
+var numero = parseInt(prompt("Insira um número:"));
 
-// if(numero !== null && numero !== "" && !isNaN(numero)){
-//     if(Primo(numero)){
-//         console.log("É primo!");
-//     } else{
-//         console.log("Não é primo!");
-//     }
-// } else{
-//     console.log("Não é número válido.");
-// }
+if(numero !== null && numero !== "" && !isNaN(numero)){
+    if(Primo(numero)){
+        console.log("É primo!");
+    } else{
+        console.log("Não é primo!");
+    }
+} else{
+    console.log("Não é número válido.");
+}
 
 
 /*9. Fatorial de um Número
@@ -172,6 +172,20 @@ Crie uma função que receba um número.
 Use um loop para multiplicar os números de 1 até o número informado.
 Exiba o resultado no console.*/
 
+function Fatorial(num){
+    let fatorial = 1;
+    for(let i = 1; i <= num; i++){
+        fatorial *= i;
+    }
+    return fatorial;
+}
+
+let num = parseInt(prompt("Insira um número:"));
+
+let resultado = Fatorial(num);
+console.log(`O fatorial de ${num} é: ${resultado}`);
+
+
 /*10. Verificar Palíndromo
 Descrição:
 Verifique se uma palavra informada pelo usuário é um palíndromo (lê-se igual de trás para frente).
@@ -179,6 +193,22 @@ Tarefas:
 Crie uma função que receba uma string.
 Inverta a string e compare com o original.
 Exiba no console se a palavra é ou não um palíndromo.*/
+
+function Palindromo(palavra){
+    let palavraNormal = palavra.replace(/\s+/g, '').toLowerCase();
+    
+    let palavraInvertida = palavraNormal.split('').reverse().join('');
+    
+    if(palavraNormal === palavraInvertida){
+        console.log(`"${palavra}" é um palíndromo.`);
+    } else {
+        console.log(`"${palavra}" não é um palíndromo.`);
+    }
+}
+
+let palavra = prompt("Insira palavra:");
+Palindromo(palavra);
+
 
 /*11. Contar Vogais em uma Frase
 Descrição:
@@ -188,12 +218,38 @@ Peça ao usuário uma frase.
 Use um loop para verificar cada caractere.
 Conte as vogais (a, e, i, o, u) e exiba o total.*/
 
+function Vogais(frase){
+    const vogais = "aeiouAEIOU";
+    let contador = 0;
+
+    for(let char of frase){
+        if(vogais.includes(char)){
+            contador++;
+        }
+    }
+    return contador;
+}
+
+let frase = prompt("Insira palavra: ");
+let total = Vogais(frase);
+
+console.log(`A frase contém ${total} vogais.`);
+
+
 /*12. Gerar Números Aleatórios
 Descrição:
 Gere um número aleatório entre 1 e 100.
 Tarefas:
 Use a função Math.random e ajuste o intervalo para 1 a 100.
 Exiba o número gerado no console.*/
+
+function NumeroAleatorio() {
+    return Math.floor(Math.random() * 100) + 1;
+}
+
+let numeroAleatorio = NumeroAleatorio();
+console.log(`Número aleatório gerado: ${numeroAleatorio}`);
+
 
 /*13. Substituir Números Negativos por Zero
 Descrição:
@@ -203,6 +259,22 @@ Crie um array como [4, -3, 2, -1, 0].
 Use um loop para verificar cada número.
 Substitua os números negativos por 0 e exiba o array no console.*/
 
+function Substituir(array){
+    for(let i = 0; i < array.length; i++){
+        if (array[i] < 0){
+            array[i] = 0;
+        }
+    }
+    return array;
+}
+
+let numeros = [4, -3, 2, -1, 0];
+
+let resultado = Substituir(numeros);
+
+console.log("Array modificado:", resultado);
+
+
 /*14. Verificar Palavras Proibidas em um Texto
 Descrição:
 Verifique se uma frase contém palavras proibidas.
@@ -211,9 +283,44 @@ Crie um array de palavras proibidas como ['palavra1', 'palavra2'].
 Peça ao usuário uma frase.
 Verifique se a frase contém alguma palavra do array e exiba uma mensagem de alerta.*/
 
+function verificarPalavrasProibidas(frase, palavrasProibidas){
+    for(let palavra of palavrasProibidas){
+        if(frase.toLowerCase().includes(palavra.toLowerCase())){
+            return true;
+        }
+    }
+    return false;
+}
+
+const palavrasProibidas = ['palavra1', 'palavra2', 'proibido'];
+
+let frase = prompt("Digite uma frase para verificar palavras proibidas: ");
+
+
+if (verificarPalavrasProibidas(frase, palavrasProibidas)) {
+    console.log("A frase contém palavras proibidas.");
+} else {
+    console.log("A frase não contém palavras proibidas.");
+}
+
+
 /*15. Gerar uma Lista de Números Pares
 Descrição:
 Crie uma lista de números pares entre 1 e 20.
 Tarefas:
 Use um loop para gerar os números pares.
 Adicione os números a um array e exiba-o no console.*/
+
+function ListaDePares(){
+    let numerosPares = [];
+    for(let i = 1; i <= 20; i++) {
+        if(i % 2 === 0) {
+            numerosPares.push(i);
+        }
+    }
+    return numerosPares;
+}
+
+let listaPares = ListaDePares();
+
+console.log("Lista de números pares entre 1 e 20:", listaPares);
